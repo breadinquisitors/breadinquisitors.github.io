@@ -1,3 +1,15 @@
+root {
+--nepal: #849cbc;
+--athens-gray: #fafafb;
+--beauty-bush: #ebacb4;
+--pink-flare: #e7ccd3;
+--botticelli: #c1cede;
+--chatelle: #bcb3c1;
+--beauty-bush: #edbbc4;
+--casper: #acc4d4;
+--lily: #cfabbc;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -10,4 +22,11 @@ html, body {
 .page-title {
 	padding: 50px 0;
 	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	width: 100%;
+	margin: 0 auto;
+	gap: 20px;
 }
