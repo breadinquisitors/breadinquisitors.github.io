@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.page-container {
+	padding-bottom: 50px;
+}
+
+.page-title {
+	padding: 50px 0;
+	text-align: center;
+}
