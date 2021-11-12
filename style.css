@@ -30,3 +30,12 @@ html, body {
 	margin: 0 auto;
 	gap: 20px;
 }
+
+.blurb {
+    text-align: justify;
+    padding: 0 5rem;
+}
+
+.italics {
+    font-style: italic;
+}
