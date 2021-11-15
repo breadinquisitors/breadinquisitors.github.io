@@ -34,7 +34,7 @@ body {
 
 .wrapper {
 	display: grid;
-	width: 100%;
+	width: 70%;
 	margin: 0 auto;
 	gap: 20px;
 }
@@ -46,4 +46,10 @@ body {
 
 .italics {
     font-style: italic;
+}
+
+.gray {
+	background-color: #C9C9C9;
+	width: 100%;
+	padding-top: 1em;
 }
