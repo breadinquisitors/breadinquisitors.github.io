@@ -15,7 +15,7 @@
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Wage Gap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -24,147 +24,49 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
+                    <a class="nav-link" aria-current="page" href="#overview">Overview</a>
                     <a class="nav-link" href="#geographical">Geographical</a>
                     <a class="nav-link" href="#dashboard">Ethnicity Dashboard</a>
                 </div>
             </div>
         </div>
     </nav>
-<div class="wrapper">
-    <div class="container-xl page-container">
-        <div class="container page-title">
-            <h1>Gender Wage Gap</h1>
-        </div>
-        
-        <!-- Overall Gender Wage Difference -->
-        <div class="container" id="overview">
-            <div class="container text-center">
-                <h2>
-                    Overall Gender Wage Differences (1990 - 2019)
-                </h2>
+    <div class="wrapper">
+        <div class="container-xl page-container">
+            <div class="container page-title">
+                <h1>Gender Wage Gap</h1>
+            </div>
+            
+            <!-- Overall Gender Wage Difference -->
+            <div class="container" id="overview">
+                <div class="container text-center">
+                    <h2>
+                        Overall Gender Wage Differences (1990 - 2019)
+                    </h2>
 
+                    
+                </div>
+                <div class="container blurb">
+                    <p>
+                        Presented below is an overall view of the gender wage differences between men and women, from 1990 to 2019. This view considers all racial, ethnic, religious, and age groups in the United States, with men being in blue and women being in pink.
+                    </p>
+                </div>
+
+                <br/>
                 
-            </div>
-            <div class="container blurb">
-                <p>
-                    Presented below is an overall view of the gender wage differences between men and women, from 1990 to 2019. This view considers all racial, ethnic, religious, and age groups in the United States, with men being in blue and women being in pink.
-                </p>
-            </div>
-
-            <br/>
-            
-            <!-- Tableau Viz -->
-            <div class='tableauPlaceholder' id='viz1636336211133' style='position: relative'><noscript><a href='#'><img
-                        alt='Overview Gender Wage Gap '
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;OverviewGenderWageGap&#47;OverviewGenderWageGap&#47;1_rss.png'
-                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='OverviewGenderWageGap&#47;OverviewGenderWageGap' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;OverviewGenderWageGap&#47;OverviewGenderWageGap&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object></div>
-            <script
-            type='text/javascript'>                    var divElement = document.getElementById('viz1636336211133'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-
-            <div class="container text-center italics">
-                <p>
-                    <strong>Source:</strong>
-                    <a href="https://www.dol.gov/agencies/wb/data/earnings/median-annual-sex-race-hispanic-ethnicity">
-                        US Department of Labor
-                    </a>
-                </p>
-            </div>
-        </div>
-        
-        <br/> <br/>
-
-        <!-- US Map -->
-        <div class="container" id="geographical">
-            <div class="container text-center">
-                <h2>
-                    Gender Wage Gap in Different US States in 2020
-                </h2>
-            </div>
-
-            <br/>
-
-            <!-- Tableau Viz -->
-            <div class='tableauPlaceholder' id='viz1636336114844' style='position: relative'><noscript><a href='#'><img
-                        alt='Gender Weekly Wage Difference For Every State '
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USMap_16363360701690&#47;USMAP&#47;1_rss.png'
-                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='USMap_16363360701690&#47;USMAP' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USMap_16363360701690&#47;USMAP&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-                <param name='filter' value='publish=yes' />
-            </object></div>
-            <script
-            type='text/javascript'>                    var divElement = document.getElementById('viz1636336114844'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-
-            <div class="container text-center italics">
-                <p>
-                    <strong>Source:</strong> 
-                    <a href="https://www.dol.gov/agencies/wb/data/earnings/median-annual-sex-race-hispanic-ethnicity">
-                        US Bureau of Labor Statistics
-                    </a>
-                </p>
-            </div>
-            
-        </div>
-
-        <br/><br/>
-        
-        <!-- Gender and Ethnic Wage Differences -->
-        <div class="container" id="dashboard">
-            <div class="container text-center">
-                <h2>
-                    Racial Gender Wage Differences (1990 - 2019)
-                </h2>
-            </div>
-
-            <div class="container blurb">
-                <p>
-                    Here, in order to allow for easier intuition, four charts were made to separate racial groups and view gender gaps between them. This is the same data presented as the overall gender wage gap, but instead split by racial category median, also within the 1990-2019 time frame. Likewise, separating these four racial groups allows for identifying how different racial groups stack up against one another, versus just the overall gender pay gap.
-                </p>
-            </div>
-
-            <br/>
-
-            <!-- Tableau Viz -->
-            <div class='tableauPlaceholder' id='viz1636336247984' style='position: relative'><noscript><a href='#'><img
-                            alt='Dashboard 1 '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalMenvsWomenPay&#47;Dashboard1&#47;1_rss.png'
+                <!-- Tableau Viz -->
+                <div class='tableauPlaceholder' id='viz1636336211133' style='position: relative'><noscript><a href='#'><img
+                            alt='Overview Gender Wage Gap '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;OverviewGenderWageGap&#47;OverviewGenderWageGap&#47;1_rss.png'
                             style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
                     <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                     <param name='embed_code_version' value='3' />
                     <param name='site_root' value='' />
-                    <param name='name' value='TotalMenvsWomenPay&#47;Dashboard1' />
+                    <param name='name' value='OverviewGenderWageGap&#47;OverviewGenderWageGap' />
                     <param name='tabs' value='no' />
                     <param name='toolbar' value='yes' />
                     <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalMenvsWomenPay&#47;Dashboard1&#47;1.png' />
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;OverviewGenderWageGap&#47;OverviewGenderWageGap&#47;1.png' />
                     <param name='animate_transition' value='yes' />
                     <param name='display_static_image' value='yes' />
                     <param name='display_spinner' value='yes' />
@@ -172,9 +74,9 @@
                     <param name='display_count' value='yes' />
                     <param name='language' value='en-US' />
                 </object></div>
-            <script
-                type='text/javascript'>                    var divElement = document.getElementById('viz1636336247984'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1277px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-        
+                <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1636336211133'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
                 <div class="container text-center italics">
                     <p>
                         <strong>Source:</strong>
@@ -183,9 +85,107 @@
                         </a>
                     </p>
                 </div>
+            </div>
+            
+            <br/> <br/>
+
+            <!-- US Map -->
+            <div class="container" id="geographical">
+                <div class="container text-center">
+                    <h2>
+                        Gender Wage Gap in Different US States in 2020
+                    </h2>
+                </div>
+
+                <br/>
+
+                <!-- Tableau Viz -->
+                <div class='tableauPlaceholder' id='viz1636336114844' style='position: relative'><noscript><a href='#'><img
+                            alt='Gender Weekly Wage Difference For Every State '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USMap_16363360701690&#47;USMAP&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='USMap_16363360701690&#47;USMAP' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USMap_16363360701690&#47;USMAP&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object></div>
+                <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1636336114844'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+                <div class="container text-center italics">
+                    <p>
+                        <strong>Source:</strong> 
+                        <a href="https://www.dol.gov/agencies/wb/data/earnings/median-annual-sex-race-hispanic-ethnicity">
+                            US Bureau of Labor Statistics
+                        </a>
+                    </p>
+                </div>
+                
+            </div>
+
+            <br/><br/>
+            
+            <!-- Gender and Ethnic Wage Differences -->
+            <div class="container" id="dashboard">
+                <div class="container text-center">
+                    <h2>
+                        Racial Gender Wage Differences (1990 - 2019)
+                    </h2>
+                </div>
+
+                <div class="container blurb">
+                    <p>
+                        Here, in order to allow for easier intuition, four charts were made to separate racial groups and view gender gaps between them. This is the same data presented as the overall gender wage gap, but instead split by racial category median, also within the 1990-2019 time frame. Likewise, separating these four racial groups allows for identifying how different racial groups stack up against one another, versus just the overall gender pay gap.
+                    </p>
+                </div>
+
+                <br/>
+
+                <!-- Tableau Viz -->
+                <div class='tableauPlaceholder' id='viz1636336247984' style='position: relative'><noscript><a href='#'><img
+                                alt='Dashboard 1 '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalMenvsWomenPay&#47;Dashboard1&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='TotalMenvsWomenPay&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalMenvsWomenPay&#47;Dashboard1&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1636336247984'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1277px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+            
+                    <div class="container text-center italics">
+                        <p>
+                            <strong>Source:</strong>
+                            <a href="https://www.dol.gov/agencies/wb/data/earnings/median-annual-sex-race-hispanic-ethnicity">
+                                US Department of Labor
+                            </a>
+                        </p>
+                    </div>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
