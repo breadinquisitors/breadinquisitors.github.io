@@ -35,14 +35,14 @@ body {
 
 .wrapper {
 	display: grid;
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	gap: 20px;
 }
 
 .blurb {
     text-align: justify;
-    padding: 0 5rem;
+    padding: 0 7rem;
 }
 
 .italics {
@@ -53,4 +53,11 @@ body {
 	background-color: #C9C9C9;
 	width: 100%;
 	padding-top: 1em;
+}
+
+
+@media screen and (min-width: 1400px) {
+    .blurb {
+        padding: 0 10rem;
+    }
 }
